@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+html {
+    font-family: sans-serif;
+}
+
+.maxwidth {
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oxygen", sans-serif;
+}
+
+.button {
+    display: inline-block;
+    color: white;
+    background: #58c4c4;
+    border-radius: 5px;
+    padding: 0.75em 2em;
+    text-decoration: none;
+    margin-top: .5em;
+}
+
+.button:hover {
+    background: #37a0a0;
+}
+
+.icon-play {
+    height: 5em;
+    display: none;
+}
+
+.icon-play img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hidden {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+}
+
+.clearfix:after, .row:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.top-header {
+    text-align: center;
+}
+
+.top-header-logo {
+    margin: .5em;
+}
+
+.main-nav {
+    background: #612674;
+    text-align: center;
+}
+
+.main-nav ul {
+    margin: 0;
+    padding: 1em 0;
+    list-style: none;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+
+.main-nav a:hover {
+    background: #7c3792;
+}
+
+.top-content {
+    text-align: center;
+    padding: 1em;
+    background: #f6f6f6;
+}
+
+.top-content-title {
+    color: #612674;
+    font-size: 1.375em;
+    margin: 1.375em;
+}
+
+.top-content-subtitle {
+    color: #a87bb7;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.middle-content {
+    padding: 2em;
+    background: #f6f6f6;
+    text-align: center;
+}
+
+.middle-content-title {
+    font-size: 1.25em;
+    color: #652e78;
+    text-transform: uppercase;
+}
+
+.middle-content p {
+    line-height: 1.5;
+    color: #222;
+}
+
+.middle-content span[class^=icon] {
+    font-size: 3.5em;
+    color: #652e78;
+}
+
+.main-content {
+    padding: 2em;
+}
+
+.main-content p {
+    line-height: 1.2em;
+}
+
+.main-content-article {
+    margin-bottom: 3.5em;
+}
+
+.main-content-title {
+    font-size: 1.25em;
+    color: #652e78;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.footer {
+    background: #25303e;
+    color: #83969f;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.footer-menushare {
+    background: #303d4c;
+    padding: .5em;
+}
+
+.footer-menushare ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.footer-menushare li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.footer-menushare a {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-menushare a:hover {
+    color: rgb(204, 204, 204);
+    transition: .2s;
+}
+
+@media screen and (min-width: 48.75em) {
+    .top-header-logo {
+        float: left;
+    }
+
+    .main-nav {
+        background: transparent;
+    }
+
+    .main-nav ul {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        right: 5px;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        margin-top: 1.5625em;
+    }
+
+    .main-nav a {
+        color: #713a84;
+    }
+
+    .main-nav a:hover {
+        background: #e7d9fc;
+    }
+
+    .top-content {
+        background: #521a66;
+        color: white;
+        float: none;
+    }
+
+    .icon-play {
+        height: 5em;
+        display: block;
+    }    
+
+    .top-content-title, .top-content-subtitle {
+        color: white;
+    }
+
+    .col1-4 {
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
+
+    .main-content-article .button {
+        float: right;
+    }
+}
+
+@media screen and (min-width: 62.5em) {
+    .main-nav ul {
+        position: absolute;
+        right: 5px;
+    }
+
+    .top-content {
+        background: #521a66 url(../images/bg_topo_1198x670.jpg);
+        height: 25em;
+        float: none;
+        width: 100%;
+    }
+
+    .icon-play {
+        margin-top: 7em;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .main-nav ul {
+        position: absolute;
+        right: 5px;
+    }
+
+    .top-content {
+        background-image: url(../images/bg_topo_1600x1374.jpg);
+        padding: 19em 18em 10em;
+    }
+
+    .col1-4 {
+        width: 23%;
+        margin: 1%;
+    }
+
+    .col1-2 {
+        width: 48%;
+        margin: 1%;
+        float: left;
+    }
+
+    .main-content-article .button {
+        float: none;
+    }
+}
